@@ -1,4 +1,4 @@
- m, $(function() {
+ $(function() {
     console.log("document is ready!");
 
     var userName, nameLength, nameMsg, nameReverse = ""; 
@@ -6,16 +6,14 @@
     $ ('btnName').onClick = function() {
 
         userName = $('#userName').val(); 
+
         
-        // console.log(userName); 
-        // console.log($('#userName').val().length); 
-        // console.log(getStringLength(userName)); 
 
         nameLength = getStringLength(userName);
         nameMsg = "The Length of your name is: ";
         $('#nameOutput').append(nameMsg + nameLength + "<br/>"); 
 
-        // console.log(reverseString(userName)); 
+       
 
         nameReverse = reverseString(userName);
         nameMsg = "Your Name reversed letters is: ";
