@@ -3,7 +3,9 @@
 
     var userName, nameLength, nameMsg, nameReverse = ""; 
 
-    $ ('btnName').onClick = function() {
+    $('#btnName').click = function() {
+
+        //alert('Your name reversed is: ');
 
         userName = $('#userName').val(); 
 
@@ -23,9 +25,11 @@
 
         stringArrayPosition(userName); 
 
-        };
+    };
 
         $('#btnClear').click(function(){
+            alert('Output cleared');
+            
             clearElement("#nameOutput", "html");
             clearElement("#userName", "input");
       })
